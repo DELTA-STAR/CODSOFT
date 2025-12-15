@@ -7,10 +7,12 @@ def inp():
   if(n<8):
       print("-"*5,"Lower Than The Accepted Length Of Passwords","-"*5)
       print("-"*5,"The Minimum Limit Is Usually 8","-"*5)
+      print()
       inp()
   elif(n>64):
       print("-"*5,"More Than The Accepted Length Of Passwords","-"*5)
       print("-"*5,"The Max Limit Is Usually 64","-"*5)
+      print()
       inp()
   else:
       password(n)
@@ -25,6 +27,8 @@ def password(n):
   for i in range(n):
     password+=random.choice(included)
   print(password)
+  print()
   
 print("-"*5,"WELCOME TO MIND-YOUR-KEEEYS PASSWORD GENERATOR","-"*5)
+print()
 inp()
